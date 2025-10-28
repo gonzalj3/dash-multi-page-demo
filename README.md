@@ -14,14 +14,23 @@
   python app_3.py  # Line vs scatter plots
   python app_4.py  # Append approach
 
-  3. Run the multi-page platform:
+  3. Run the main platform (single-page):
+  python app_6.py
+  Navigate to http://localhost:8051
+  
+  4. Run the multi-page platform:
   python app_5.py
   Navigate to http://localhost:8050
 
-  Architecture
+  ## Architecture
 
-  - app_1.py: Basic Dash application
-  - app_2.py: dcc.Store for toggle state persistence
-  - app_3.py: Plot type switching (line/scatter)
-  - app_4.py: Graph append approach
-  - app_5.py: Multi-page platform integrating all apps
+  ### Individual Apps
+  - **app_1.py** - Basic Dash application with simple button interactions
+  - **app_2.py** - Advanced app using dcc.Store for state management and toggle functionality
+  - **app_3.py** - Line vs scatter plot toggle demonstration
+  - **app_4.py** - Dynamic graph appending approach
+  - **app_7.py** - Dynamic graph appending with dictionary-style IDs
+
+  ### Platform Apps
+  - **app_6.py** - Single-page platform that combines all apps on one scrollable page (Main Platform)
+  - **app_5.py** - Multi-page platform that combines apps using Dash's pages feature
